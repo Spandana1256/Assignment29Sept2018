@@ -1,0 +1,3 @@
+alter table mobile_bill add(bill_payment_date date, bill_payment_due_date date);
+
+alter table mobile_bill add constraint bill_payement_due_date check(bill_payment_due_date between bill_payment_date and bill_payment_date + 7
